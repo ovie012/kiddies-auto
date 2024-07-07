@@ -193,6 +193,10 @@ header {
   color: #840032;
 }
 
+img.open-mobile-nav {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   header {
     font-size: 13px;
@@ -225,6 +229,24 @@ header {
   .bottom-header section form img {
     top: 30%;
     right: 18px;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  img.open-mobile-nav {
+    display: block;
+    cursor: pointer;
+    margin-left: 24px;
+  }
+
+  .top-header section:nth-of-type(2),
+  .bottom-header section:nth-of-type(2),
+  .bottom-header section:nth-of-type(3) {
+    display: none;
+  }
+
+  .bottom-header section p {
+    display: none;
   }
 }
 
@@ -344,6 +366,47 @@ main {
   }
 }
 
+@media only screen and (max-width:800px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  
+  .hero-text h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.54px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.77px;
+    color: #696969;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text br {
+    display: none;
+  }
+  
+  .hero-text button {
+    width: 100%;
+    height: 47px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-banner img {
+    width: 90%;
+    height: 250px;
+  }
+}
+
 /* filter section */
 .filter {
   width: 100%;
@@ -397,6 +460,37 @@ main {
     line-height: 18px;
     padding: 10px 14px;
   } 
+}
+
+@media only screen and (max-width:500px) {
+
+  .filter {
+    height: auto;
+    align-items: flex-start;
+    margin-top: 15px;
+  }
+  
+  .filter section {
+    gap: 5px;
+    justify-content: flex-start;
+  }
+
+  .filter section:nth-of-type(1) {
+    flex-wrap: wrap;
+    width: 70%;
+  }
+
+  .filter section p {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 8px 13px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .filter section:nth-of-type(2) p {
+    margin-top: -5px;
+  }
 }
 
 /* flash sales section */
@@ -516,6 +610,60 @@ main {
     padding: 8px 10px;
     border-radius: 6px;
     width: 75px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .flash-sales {
+    padding: 24px 5%;
+  }
+  
+  .flash-sales-header {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flash-sales-header div:nth-of-type(1) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+  }
+  
+  .flash-sales-header h4 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-right: 10px;
+  }
+  
+  .flash-sales-header div:nth-of-type(1) img {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    margin-right: 5px;
+  }
+  
+  .flash-sales-header h5 {
+    font-size: 14px;
+    padding: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .flash-sales-header div:nth-of-type(2) {
+    gap: 5px;
+  }
+  
+  .flash-sales-header div:nth-of-type(2) img:nth-of-type(1) {
+    padding: 3px 5px;
+  }
+  
+  .flash-sales-header div:nth-of-type(2) img:nth-of-type(2) {
+    padding: 6px 8px;
+    border-radius: 8px;
+    background: #1e2019;
+    width: 54px;
   }
 }
 
@@ -745,6 +893,40 @@ main {
   }
 }
 
+@media only screen and (max-width:500px) {
+  .best-deals {
+    padding: 24px 5%;
+  }
+  
+  .best-deals-header {
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .best-deals-header h4 {
+    font-size: 18px;
+    width: 100%;
+    line-height: 27px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    /* margin-right: 89px; */
+  }
+  
+  .best-deals-header h4 br {
+    display: none;
+  }
+  
+  .best-deals-header p {
+    width: 45%;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 10px;
+    padding: 8px 18px;
+    margin-bottom: 15px;
+  }
+}
+
 .best-deals-body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -879,7 +1061,8 @@ button.best-deals-button {
   
   .best-deals-product section:nth-of-type(1) img:nth-of-type(2) {
     top: 10px;
-    left: 170px;
+    /* left: 170px; */
+    right: 5%;
     border-radius: 50%;
     width: 35px;
     height: 35px;
@@ -925,6 +1108,55 @@ button.best-deals-button {
   }
 }
 
+@media only screen and (max-width:500px) {
+  .best-deals-body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .best-deals-product {
+    min-width: 90%;
+    height: 400px;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+  
+  .best-deals-product section:nth-of-type(1) img:nth-of-type(2) {
+    top: 10px;
+    /* right: 10px; */
+  }
+  
+  .best-deals-product section:nth-of-type(2) div:nth-of-type(3) p {
+    margin-right: 24px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32.84px;
+    letter-spacing: 0.5px;
+  }
+  
+  .best-deals-product section:nth-of-type(2) div:nth-of-type(3) span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.46px;
+    letter-spacing: 0.5px;
+    color: #EF4261;
+    text-decoration: line-through;
+  }
+  
+  .best-deals-product section:nth-of-type(2) div:nth-of-type(2) p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.77px;
+    letter-spacing: 0.5px;
+  }
+  
+  button.best-deals-button {
+    width: 100%;
+    height: 45px;
+    margin-left: 0;
+  }
+}
+
 /* footer section */
 footer {
   width: 100%;
@@ -954,6 +1186,7 @@ footer p {
   letter-spacing: 0.5px;
   margin-bottom: 10px;
   color: #797979;
+  cursor: pointer;
 }
 
 .first-footer {
@@ -1037,4 +1270,61 @@ footer p {
     gap: 80px;
     width: 75%;
   } */
+}
+
+@media only screen and (max-width:500px) {
+  footer {
+    display: block;
+  }
+  
+  footer h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.77px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    color: #131313;
+  }
+  
+  footer li,
+  footer p {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.77px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    color: #797979;
+    cursor: pointer;
+  }
+  
+  .first-footer {
+    margin-bottom: 30px;
+  }
+  
+  .first-footer img {
+    width: 115px;
+    height: 35px;
+    margin-bottom: 24px;
+  }
+  
+  .first-footer p {
+    margin-bottom: 40px;
+  }
+  
+  .first-footer div {
+    width: 145px;
+    height: 25px;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .second-footer {
+    display: block;
+  }
+  
+  .second-footer div {
+    margin-bottom: 30px;
+  }
 }

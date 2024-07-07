@@ -74,6 +74,7 @@ function Header () {
                             <img src="/bytesize_cart.svg" alt="cart icon" />
                             <p>Cart</p>
                         </div>
+                        <img src="/icon-menu.svg" alt="open menu" className="open-mobile-nav" />
                     </section>
                 </div>
             </header>

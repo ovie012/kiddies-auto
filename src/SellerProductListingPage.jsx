@@ -10,7 +10,7 @@ function SellerProductListingPage() {
                              captivates both children and parents alike.
                         </p>
                         <button>Learn more</button>
-                        <div><span></span><span></span><span></span><span></span></div>
+                        {/* <div><span></span><span></span><span></span><span></span></div> */}
                     </section>
                     <section className="hero-banner">
                         <img src="/hero-image-1.png" alt="kids car" />
