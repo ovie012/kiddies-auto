@@ -5,18 +5,48 @@ function SellerProductListingPage() {
 
     // scroll logic 
     const scrollContainerRef = useRef(null);
+    const [canScrollLeft, setCanScrollLeft] = useState(false);
+    const [canScrollRight, setCanScrollRight] = useState(true);
+
+    const checkScrollPosition = () => {
+        const container = scrollContainerRef.current;
+        if (container) {
+            setCanScrollLeft(container.scrollLeft > 0);
+            setCanScrollRight(container.scrollLeft < container.scrollWidth - container.clientWidth);
+        }
+    };
 
     const scrollLeft = () => {
         if (scrollContainerRef.current) {
-        scrollContainerRef.current.scrollBy({ left: -0.8 * window.innerWidth, behavior: 'smooth' });
+            scrollContainerRef.current.scrollBy({ left: -0.8 * window.innerWidth, behavior: 'smooth' });
         }
     };
 
     const scrollRight = () => {
         if (scrollContainerRef.current) {
-        scrollContainerRef.current.scrollBy({ left: 0.8 * window.innerWidth, behavior: 'smooth' });
+            scrollContainerRef.current.scrollBy({ left: 0.8 * window.innerWidth, behavior: 'smooth' });
         }
     };
+
+    useEffect(() => {
+        checkScrollPosition();
+        const container = scrollContainerRef.current;
+        container.addEventListener('scroll', checkScrollPosition);
+        return () => container.removeEventListener('scroll', checkScrollPosition);
+    }, []);
+    // const scrollContainerRef = useRef(null);
+
+    // const scrollLeft = () => {
+    //     if (scrollContainerRef.current) {
+    //     scrollContainerRef.current.scrollBy({ left: -0.8 * window.innerWidth, behavior: 'smooth' });
+    //     }
+    // };
+
+    // const scrollRight = () => {
+    //     if (scrollContainerRef.current) {
+    //     scrollContainerRef.current.scrollBy({ left: 0.8 * window.innerWidth, behavior: 'smooth' });
+    //     }
+    // };
 
     // time logic
     const [time, setTime] = useState({ hours: 7, minutes: 10, seconds: 43 });
@@ -140,8 +170,8 @@ function SellerProductListingPage() {
                             </div>
                         </div>
                         <div>
-                            <img src="/east.svg" alt="back arrow" onClick={scrollLeft} />
-                            <img src="/Arrow 1.svg" alt="forward arrow" onClick={scrollRight} />
+                            <img src="/east.svg" alt="back arrow" onClick={scrollLeft} style={{ opacity: canScrollLeft ? 1 : 0.5, cursor: canScrollLeft ? 'pointer' : 'default' }} />
+                            <img src="/Arrow 1.svg" alt="forward arrow" onClick={scrollRight} style={{ opacity: canScrollRight ? 1 : 0.5, cursor: canScrollRight ? 'pointer' : 'default' }} />
                         </div>
                     </section>
                     <section className="flash-sales-body" ref={scrollContainerRef}>
