@@ -3,7 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 function Header () {
     const [isScrolled, setIsScrolled] = useState(false);
-    // const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+    const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
     
 
@@ -19,9 +19,9 @@ function Header () {
     };
   }, []);
 
-//   const toggleMobileNav = () => {
-//     setIsMobileNavOpen(!isMobileNavOpen);
-//   };
+  const toggleMobileNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen);
+  };
 
     return (
         <>
@@ -74,7 +74,26 @@ function Header () {
                             <img src="/bytesize_cart.svg" alt="cart icon" />
                             <p>Cart</p>
                         </div>
-                        <img src="/icon-menu.svg" alt="open menu" className="open-mobile-nav" />
+                        <img src="/icon-menu.svg" alt="open menu" className="mobile-click-open" onClick={toggleMobileNav} />
+                        <div className={`mobile-nav ${isMobileNavOpen ? "active" : ""}`}>
+                            <img src="/icon-menu-close.svg" alt="close mobile nav" className="mobile-click-close" onClick={toggleMobileNav} />
+                            <section>
+                                <nav>
+                                    <ul>
+                                        <li>Categories <img src="/mingcute_down-line.svg" alt="down arrow" /></li>
+                                        <li>Deals</li>
+                                        <li>What's New</li>
+                                        <li>Delivery</li>
+                                    </ul>
+                                </nav>
+                            </section>
+                            <section>
+                                <form action="POST">
+                                    <input type="text" placeholder="Search product"/>
+                                    <img src="/circum_search.svg" alt="search icon" />
+                                </form>
+                            </section>
+                        </div>
                     </section>
                 </div>
             </header>

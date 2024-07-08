@@ -193,7 +193,8 @@ header {
   color: #840032;
 }
 
-img.open-mobile-nav {
+img.mobile-click-open,
+.bottom-header .mobile-nav {
   display: none;
 }
 
@@ -233,10 +234,87 @@ img.open-mobile-nav {
 }
 
 @media only screen and (max-width:800px) {
-  img.open-mobile-nav {
+  img.mobile-click-open {
     display: block;
     cursor: pointer;
     margin-left: 24px;
+  } 
+  
+  .bottom-header.scrolled {
+    opacity: .99;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .bottom-header .mobile-nav.active {
+    display: block;
+    width: 65%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #CCCED0;
+    z-index: 1000;
+    padding: 10px 5%;
+    box-shadow: 0 0 1000px rgba(0, 0, 0, 1);
+  }
+
+  .mobile-click-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .bottom-header .mobile-nav.active section nav {
+    margin-top: 100px;
+  }
+
+  .bottom-header .mobile-nav.active section nav ul {
+    display: block;
+  }
+
+  .bottom-header .mobile-nav.active section nav ul li {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .bottom-header .mobile-nav.active section nav ul li img {
+    width: 25px;
+  }
+
+  .bottom-header .mobile-nav.active section {
+    display: block;
+  }
+
+  .bottom-header .mobile-nav.active section form {
+    width: 100%;
+    height: 40px;
+    margin-top: 100px;
+  }
+  
+  .bottom-header .mobile-nav.active section form input {
+    width: 100%;
+    height: 100%;
+    padding: 0 55px 0 20px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    background: #f6f7f8;
+  }
+  
+  .bottom-header .mobile-nav.active section form input::placeholder {
+    font-size: 16px;
+    opacity: .7;
+    color: #696969;
+  }
+  
+  .bottom-header .mobile-nav.active section form img {
+    position: absolute;
+    top: 25%;
+    right: 27px;
+    cursor: pointer;
   }
 
   .top-header section:nth-of-type(2),
@@ -930,7 +1008,7 @@ main {
 .best-deals-body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
