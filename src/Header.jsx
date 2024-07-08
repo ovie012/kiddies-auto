@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 function Header () {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -47,7 +47,9 @@ function Header () {
                 </div>
                 <div className={`${isScrolled ? "scrolled" : ""} bottom-header `}>
                     <section>
-                        <img src="/Logo.svg" alt="logo" />
+                        <Link to='/'>
+                            <img src="/Logo.svg" alt="logo" />
+                        </Link>
                     </section>
                     <section>
                         <nav>

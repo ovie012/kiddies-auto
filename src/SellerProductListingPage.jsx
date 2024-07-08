@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import ProductDescription from './ProductDescription';
 
 
 function SellerProductListingPage() {
@@ -175,7 +177,7 @@ function SellerProductListingPage() {
                         </div>
                     </section>
                     <section className="flash-sales-body" ref={scrollContainerRef}>
-                        <div className="flash-sales-product">
+                        <Link to='/ProductDescription'> <div className="flash-sales-product">
                             <section>
                                 <img src="/jeep2 2.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -195,7 +197,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="flash-sales-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="flash-sales-product">
                             <section>
                                 <img src="/pobo jeep 2.png" alt="car image" />
                                 <img src="/favorite (1).svg" alt="favorite icon" />
@@ -215,7 +218,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="flash-sales-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="flash-sales-product">
                             <section>
                                 <img src="/bike4 2.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -235,7 +239,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="flash-sales-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="flash-sales-product">
                             <section>
                                 <img src="/2 23259.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -255,7 +260,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="flash-sales-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="flash-sales-product">
                             <section>
                                 <img src="/6 38.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -275,7 +281,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="flash-sales-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="flash-sales-product">
                             <section>
                                 <img src="/jeep2 2.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -295,7 +302,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="flash-sales-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="flash-sales-product">
                             <section>
                                 <img src="/pobo jeep 2.png" alt="car image" />
                                 <img src="/favorite (1).svg" alt="favorite icon" />
@@ -315,7 +323,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="flash-sales-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="flash-sales-product">
                             <section>
                                 <img src="/bike4 2.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -335,7 +344,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="flash-sales-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="flash-sales-product">
                             <section>
                                 <img src="/2 23259.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -355,7 +365,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="flash-sales-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="flash-sales-product">
                             <section>
                                 <img src="/6 38.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -375,6 +386,7 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
+                        </Link>
                     </section>
                 </div>
                 <div className="best-deals">
@@ -386,7 +398,7 @@ function SellerProductListingPage() {
                         <p>Coveted product</p>
                     </section>
                     <section className="best-deals-body">
-                        <div className="best-deals-product">
+                        <Link to='/ProductDescription'> <div className="best-deals-product">
                             <section>
                                 <img src="/download 2.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -406,7 +418,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="best-deals-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="best-deals-product">
                             <section>
                                 <img src="/small car6 2.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -426,7 +439,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="best-deals-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="best-deals-product">
                             <section>
                                 <img src="/bike3 2.png" alt="car image" />
                                 <img src="/favorite (1).svg" alt="favorite icon" />
@@ -446,7 +460,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="best-deals-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="best-deals-product">
                             <section>
                                 <img src="/pobo jeep 2.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -466,12 +481,13 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
+                        </Link>
                         {/* <div className="best-deals-product">
                             <section>
                                 <img src="/bicycle6 2.png" alt="car image" />
                                 <img src="/favorite (1).svg" alt="favorite icon" />
                             </section>
-                            <section>
+                            <sectio>
                                 <div>
                                     <p>Rambo bicycle, for<br/> kids</p>
                                     <img src="/Group.svg" alt="cart icon" />
@@ -484,9 +500,10 @@ function SellerProductListingPage() {
                                     <p>$100.00</p>
                                     <span>$101.00</span>
                                 </div>
-                            </section>
+                            </sectio<Link to='/ProductDescription'> n>
                         </div>
-                        <div className="best-deals-product">
+   
+   </Link>              <Link to='/ProductDescription'>        <div className="best-deals-product">
                             <section>
                                 <img src="/3 95392.png" alt="car image" />
                                 <img src="/favorite (1).svg" alt="favorite icon" />
@@ -506,7 +523,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="best-deals-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="best-deals-product">
                             <section>
                                 <img src="/1 7216.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -526,7 +544,8 @@ function SellerProductListingPage() {
                                 </div>
                             </section>
                         </div>
-                        <div className="best-deals-product">
+                        </Link>
+                        <Link to='/ProductDescription'> <div className="best-deals-product">
                             <section>
                                 <img src="/4 466.png" alt="car image" />
                                 <img src="/favorite.svg" alt="favorite icon" />
@@ -545,9 +564,10 @@ function SellerProductListingPage() {
                                     <span>$101.00</span>
                                 </div>
                             </section>
-                        </div> */}
+                        </div>
+                        </Link> */}
                         {displayedProducts.map(product => (
-                        <div key={product.id} className="best-deals-product">
+                        <Link to='/ProductDescription'> <div key={product.id} className="best-deals-product">
                             <section>
                             <img src={product.imgSrc} alt="car image" />
                             <img src="/favorite.svg" alt="favorite icon" />
@@ -567,6 +587,7 @@ function SellerProductListingPage() {
                             </div>
                             </section>
                         </div>
+                        </Link>
                         ))}
                     </section>
                     {loadCount < 10 && <button className="best-deals-button" onClick={handleLoadMore}>Load more</button>}
