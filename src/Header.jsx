@@ -72,10 +72,12 @@ function Header () {
                             <img src="/line-md_account.svg" alt="person icon" />
                             <p>Account</p>
                         </div>
-                        <div>
-                            <img src="/bytesize_cart.svg" alt="cart icon" />
-                            <p>Cart</p>
-                        </div>
+                        {/* <Link to="/CartPage"> */}
+                            <div>
+                                <img src="/bytesize_cart.svg" alt="cart icon" />
+                                <p>Cart</p>
+                            </div>
+                        {/* </Link>  */}
                         <img src="/icon-menu.svg" alt="open menu" className="mobile-click-open" onClick={toggleMobileNav} />
                         <div className={`mobile-nav ${isMobileNavOpen ? "active" : ""}`}>
                             <img src="/icon-menu-close.svg" alt="close mobile nav" className="mobile-click-close" onClick={toggleMobileNav} />

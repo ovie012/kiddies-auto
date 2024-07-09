@@ -57,6 +57,18 @@ a {
     cursor: pointer;
 }
 
+button .link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   width: 100%;
   position: relative;
@@ -1880,7 +1892,8 @@ button.best-deals-button {
   padding: 20px 2%;
 }
 
-.cart-description section:nth-of-type(2) h4 {
+.cart-description section:nth-of-type(2) h4,
+.check-sum h5 {
   font-size: 32px;
   font-weight: 600;
   line-height: 37.54px;
@@ -1890,24 +1903,28 @@ button.best-deals-button {
   color: #000;
 }
 
-.cart-description section:nth-of-type(2) div {
+.cart-description section:nth-of-type(2) div,
+.check-sum div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
 }
 
-.cart-description section:nth-of-type(2) p {
+.cart-description section:nth-of-type(2) p,
+.check-sum p {
   font-size: 16px;
   font-weight: 500;
   line-height: 18.77px;
   letter-spacing: 0.5px;
 }
 
-.cart-description section:nth-of-type(2) p img {
+.cart-description section:nth-of-type(2) p img,
+.check-sum p img {
   width: 12px;
 }
 
-.cart-description section:nth-of-type(2) h6 {
+.cart-description section:nth-of-type(2) h6,
+.check-sum h6 {
   font-size: 24px;
   font-weight: 600;
   line-height: 28.15px;
@@ -1915,14 +1932,16 @@ button.best-deals-button {
   color: #000;
 }
 
-.cart-description section:nth-of-type(2) form {
+.cart-description section:nth-of-type(2) form,
+.check-sum form {
   width: 100%;
   height: 45px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.cart-description section:nth-of-type(2) form input {
+.cart-description section:nth-of-type(2) form input,
+.check-sum form input {
   width: 100%;
   height: 100%;
   border: none;
@@ -1930,7 +1949,8 @@ button.best-deals-button {
   border-radius: 100px;
 }
 
-.cart-description section:nth-of-type(2) form input::placeholder {
+.cart-description section:nth-of-type(2) form input::placeholder,
+.check-sum form input::placeholder {
   font-size: 16px;
   font-weight: 500;
   line-height: 18.77px;
@@ -2105,42 +2125,50 @@ div.cart-description-total h3 {
     padding: 20px 2%;
   }
 
-  .cart-description section:nth-of-type(2) h4 {
+  .cart-description section:nth-of-type(2) h4,
+  .check-sum h4 {
     font-size: 24px;
     margin-top: 8px;
     margin-bottom: 18px;
   }
 
-  .cart-description section:nth-of-type(2) div {
+  .cart-description section:nth-of-type(2) div,
+  .check-sum div {
     margin-bottom: 10px;
   }
 
-  .cart-description section:nth-of-type(2) p {
+  .cart-description section:nth-of-type(2) p,
+  .check-sum p {
     font-size: 13px;
     line-height: 14px;
   }
 
-  .cart-description section:nth-of-type(2) p img {
+  .cart-description section:nth-of-type(2) p img,
+  .check-sum p img {
     width: 8px;
   }
 
-  .cart-description section:nth-of-type(2) h6 {
+  .cart-description section:nth-of-type(2) h6,
+  .check-sum h6 {
     font-size: 18px;
     line-height: 23px;
   }
 
-  .cart-description section:nth-of-type(2) form {
+  .cart-description section:nth-of-type(2) form,
+  .check-sum form {
     width: 100%;
     height: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
-  .cart-description section:nth-of-type(2) form input {
+  .cart-description section:nth-of-type(2) form input,
+  .check-sum form input {
     padding: 0 25px;
   }
 
-  .cart-description section:nth-of-type(2) form input::placeholder {
+  .cart-description section:nth-of-type(2) form input::placeholder,
+  .check-sum form input::placeholder {
     font-size: 12px;
     line-height: 13px;
   }
@@ -2283,12 +2311,14 @@ div.cart-description-total h3 {
     cursor: pointer;
   }
   
-  .cart-description section:nth-of-type(2) {
+  .cart-description section:nth-of-type(2),
+  .check-sum {
     width: 100%;
     padding: 20px 5%;
   }
   
-  .cart-description section:nth-of-type(2) div {
+  .cart-description section:nth-of-type(2) div,
+  .check-sum div {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -2474,6 +2504,622 @@ div.cart-description-total h3 {
   .wishlist-product section div {
     padding-bottom: 10px;
     width: 100%;
+  }
+}
+
+/* Checkout page section */
+
+.checkout {
+  width: 100%;
+  padding: 50px 5%;
+  font-family: "Work Sans", sans-serif;
+}
+
+.checkout h4 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37.54px;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.checkout-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-inner section:nth-of-type(1) {
+  width: 60%;
+}
+
+.checkout-inner section:nth-of-type(2) {
+  width: 37%;
+}
+
+.checkout-div {
+  background: #dae0ef33;
+  border-radius: 20px;
+}
+
+.checkout-inner section:nth-of-type(1) div:nth-of-type(1) {
+  padding: 10px 3%;
+  margin-bottom: 15px;
+}
+
+.checkout-inner section:nth-of-type(1) div:nth-of-type(1) h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.15px;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.checkout-inner section:nth-of-type(1) div:nth-of-type(1) div {
+  display: flex;
+  gap: 10px;
+}
+
+.checkout-inner section:nth-of-type(1) div:nth-of-type(1) div button {
+  width: 49%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.77px;
+  letter-spacing: 0.5px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+}
+
+.checkout-inner section:nth-of-type(1) div:nth-of-type(1) div button:nth-of-type(1) {
+  background: #840032;
+  color: #fcfcfc;
+}
+
+.checkout-inner section:nth-of-type(1) div:nth-of-type(1) div button:nth-of-type(2) {
+  border: 1px solid #840032;
+  background: transparent;
+  color: #840032;
+}
+
+.checkout-inner section:nth-of-type(1) div:nth-of-type(2) {
+  padding: 10px 3%;
+  width: 100%;
+}
+
+.checkout-inner section:nth-of-type(1) div:nth-of-type(2) h5 {
+  color: #151515;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.15px;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.checkout form {
+  height: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+}
+
+.checkout form input {
+  /* width: 100%; */
+  height: 100%;
+  padding: 0 20px;
+  border-radius: 100px;
+  border: 1px solid #e3e3e3;
+}
+
+.form-div div input {
+  width: 100%;
+  height: 100%;
+}
+
+form img:nth-of-type(1) {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+form img:nth-of-type(2) {
+  position: absolute;
+  top: 45%;
+  right: 20px;
+}
+
+.single-form input {
+  width: 100%;
+}
+
+.double-form input {
+  width: 49%;
+}
+
+.save-button {
+  height: 40px;
+  width: 200px;
+  border: none;
+  outline: none;
+  background: #f2f0ff;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 68%;
+  /* float: right; */
+}
+
+.checkout-summary {
+  margin-top: -10px;
+}
+
+.checkout-summary div {
+  padding: 0px 3%;
+}
+
+.checkout-summary div h5 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37.54px;
+  letter-spacing: 0.5px;
+  padding-top: 10px;
+  color: #000;
+}
+
+.check-sum-p {
+  margin-left: 3%;
+}
+
+div.arrival {
+  padding: 20px 3%;
+}
+
+.arrival h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.77px;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.arrival div {
+  display: flex;
+}
+
+.arrival div img {
+  width: 40%;
+}
+
+.inner-arrival {
+  flex-direction: column;
+}
+
+.inner-arrival h6 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.15px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.inner-arrival p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.77px;
+  letter-spacing: 0.5px;
+  color: #696969;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width:1200px) {
+  .checkout h4 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  
+  .checkout-inner section:nth-of-type(1) div:nth-of-type(1) {
+    padding: 10px 3%;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-inner section:nth-of-type(1) div:nth-of-type(1) h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .checkout-inner section:nth-of-type(1) div:nth-of-type(1) div button {
+    font-size: 13px;
+  }
+  
+  .checkout-inner section:nth-of-type(1) div:nth-of-type(2) h5 {
+    color: #151515;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .checkout form {
+    height: 40px;
+  }
+  
+  .save-button {
+    height: 40px;
+    width: 150px;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .checkout-summary {
+    margin-top: -25px;
+  }
+  
+  .checkout-summary div h5 {
+    font-size: 28px;
+  }
+  
+  .arrival h2 {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  .inner-arrival h6 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .inner-arrival p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .checkout-inner {
+    flex-direction: column;
+  }
+
+  .checkout-inner section {
+    width: 100% !important;
+  }
+
+  .checkout-div {
+    width: 100% !important;
+  }
+
+  .save-button,
+  .last-section button {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .form-card-payment {
+    flex-direction: column;
+  }
+
+  .form-card-payment form {
+    margin-bottom: 35px;
+  }
+
+  .checkout-inner section {
+    margin-bottom: 50px;
+  }
+}
+
+/* payment section */
+
+.payment {
+  width: 100%;
+  padding: 50px 5%;
+  font-family: "Work Sans", sans-serif;
+}
+
+.payment input {
+  accent-color: #000;
+}
+
+.payment section {
+  width: 60%;
+  padding: 0 3%;
+  margin-bottom: 30px;
+}
+
+.payment section h4 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37.54px;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+
+.inner-payment h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.77px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+
+.inner-payment h6 img {
+  width: 12px;
+}
+
+.inner-payment p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.77px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  color: #696969;
+}
+
+.inner-payment p span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.77px;
+  letter-spacing: 0.5px;
+  color: #151515;
+}
+
+.inner-payment h6:nth-of-type(2) {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.77px;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.payment-method h5 {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.77px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.input-image {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-image div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100px;
+  border: 1px solid #696969;
+  border-radius: 100px;
+}
+
+.input-image p {
+  margin-top: 10px;
+}
+
+.input-image:nth-of-type(1) img {
+  width: 20px;
+}
+
+.card-payment-section {
+  background: #fff;
+  padding: 3%;
+  margin-top: 20px;
+  border-radius: 24px;
+}
+
+.form-card-payment {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-card-payment h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.77px;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+
+.form-card-payment form {
+  height: 50px;
+}
+
+.form-card-payment form input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e3e3e3;
+  border-radius: 56px;
+  padding: 0 20px;
+  background: #fcfcfc;
+}
+
+.form-card-payment form input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.77px;
+  letter-spacing: 0.5px;
+}
+
+.save-later {
+  display: flex;
+  margin-top: 50px;
+  gap: 5px;
+}
+
+.save-later img {
+  width: 13px;
+}
+
+.save-later p {
+  margin-bottom: 0px;
+}
+
+.billing-address {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+
+.billing-address p {
+  margin-bottom: 0;
+}
+
+.last-section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.77px;
+  letter-spacing: 0.5px;
+  color: #696969;
+}
+
+.last-section p span {
+  color: #151515;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.last-section button {
+  width: 140px;
+  height: 40px;
+  background: #840032;
+  color: #fcfcfc;
+  border: none;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.77px;
+  letter-spacing: 0.5px;
+  /* float: right; */
+  margin-left: 75%;
+}
+
+@media only screen and (max-width:1200px) { 
+  .payment section {
+    margin-bottom: 20px;
+  }
+  
+  .payment section h4 {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 26px;
+  }
+  
+  .inner-payment h6 {
+    font-size: 13px;
+  }
+  
+  .inner-payment h6 img {
+    width: 10px;
+  }
+  
+  .inner-payment p {
+    font-size: 13px;
+  }
+  
+  .inner-payment p span {
+    font-size: 13px;
+  }
+  
+  .inner-payment h6:nth-of-type(2) {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  
+  .payment-method h5 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  .input-image {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .input-image p {
+    margin-top: 10px;
+  }
+  
+  .input-image:nth-of-type(1) img {
+    width: 20px;
+  }
+  
+  .card-payment-section {
+    background: #fff;
+    padding: 3%;
+    margin-top: 20px;
+    border-radius: 24px;
+  }
+  
+  .form-card-payment {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .form-card-payment h6 {
+    font-size: 13px;
+  }
+  
+  .form-card-payment form {
+    height: 40px;
+  }
+  
+  .form-card-payment form input::placeholder {
+    font-size: 13px;
+  }
+  
+  .save-later {
+    display: flex;
+    margin-top: 40px;
+    gap: 5px;
+  }
+  
+  .save-later img {
+    width: 10px;
+  }
+  
+  .save-later p {
+    margin-bottom: 0px;
+  }
+  
+  .billing-address {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 20px 0;
+    padding-bottom: 20px;
+  }
+  
+  .billing-address p {
+    margin-bottom: 0;
+  }
+  
+  .last-section p {
+    font-size: 13px;
+  }
+  
+  .last-section button {
+    width: 110px;
+    height: 40px;
+    font-size: 13px;
+    margin-left: 75%;
   }
 }
 

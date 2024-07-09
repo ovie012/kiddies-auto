@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import CheckoutPage from './CheckoutPage';
 
 function CartPage () {
 
@@ -90,7 +91,7 @@ function CartPage () {
                                 <h5>$315.00</h5>
                             </div>
                             <div className="cart-description-buttons">
-                                <button>Check out your cart</button>
+                                <button><Link to="/CheckoutPage" className='link'>Check out your cart</Link></button>
                                 <button><img src="/paypal_logo.svg.svg" alt="paypal logo" /></button>
                             </div>
                         </section>
