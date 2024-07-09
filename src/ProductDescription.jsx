@@ -45,7 +45,7 @@ function ProductDescription () {
                                 Don’t miss it</p>
                             </div>
                             <div>
-                                <button>Buy this item</button>
+                                <button><Link to='/CheckoutPage' className="link"> Buy this item</Link></button>
                                 <button><Link to='/CartPage' className="link"> Add to cart</Link></button>
                             </div>
                             <div>
