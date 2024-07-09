@@ -5,6 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 import SellerProductListingPage from './SellerProductListingPage';
 import ProductDescription from './ProductDescription';
+import CartPage from './CartPage';
 import './App.css'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SellerProductListingPage />} />
         <Route path="/ProductDescription" element={<ProductDescription />} />
+        <Route path="/CartPage" element={<CartPage />} />
       </Routes>
       <Footer />
     </>

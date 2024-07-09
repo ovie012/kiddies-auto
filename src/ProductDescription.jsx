@@ -1,3 +1,6 @@
+import CartPage from "./CartPage";
+import { Link } from "react-router-dom";
+
 function ProductDescription () {
     return (
         <>
@@ -43,7 +46,7 @@ function ProductDescription () {
                             </div>
                             <div>
                                 <button>Buy this item</button>
-                                <button>Add to cart</button>
+                                <button><Link to='/CartPage' className="link"> Add to cart</Link></button>
                             </div>
                             <div>
                                 <div>
